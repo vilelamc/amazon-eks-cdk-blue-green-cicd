@@ -32,9 +32,9 @@ pipeline {
     stage ('Build & Containerize Stage') {
       steps {
         withCredentials([[ $class: 'AmazonWebServicesCredentialsBinding', credentialsId: 'e4e458ba-8178-4cc7-af47-cbd9046e76ce', accessKeyVariable: 'AWS_ACCESS_KEY_ID', secretKeyVariable: 'AWS_SECRET_ACCESS_KEY']]) {
-          sh label: '', script: '''echo "==================="
+          sh label: '', script: '''echo "======================"
           echo "Build Stage"
-          echo "==================="
+          echo "======================"
 
           echo "++++++++++++++++"
           source ~/.vars
