@@ -34,7 +34,7 @@ pipeline {
         withCredentials([[ $class: 'AmazonWebServicesCredentialsBinding', credentialsId: '2a90db5a-1fe2-42ea-ba91-b2075181fcab', accessKeyVariable: 'AWS_ACCESS_KEY_ID', secretKeyVariable: 'AWS_SECRET_ACCESS_KEY']]) {
           sh label: '', script: '''echo "======================"
           echo "Build Stage"
-          echo "======================"
+          echo "======================="
 
           echo "++++++++++++++++"
           source ~/.vars
